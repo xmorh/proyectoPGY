@@ -1,3 +1,5 @@
-# proyecto1PGY
-Primer proyecto PGY312
+# Radar
 
+Página web prototipo para emprendimiento de accesorios.
+
+Se usó bootstrap 5.
