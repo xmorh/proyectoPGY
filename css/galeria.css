@@ -1,0 +1,29 @@
+/* body div img {
+    height  : 600px !important;
+    position: relative;
+    padding : 20px;
+} */
+
+#LogoRadar > img {
+    height: auto;
+    margin: 15px;
+}
+
+#fondo-der {
+    text-align    : center;
+    vertical-align: middle;
+}
+
+#fondo-der h1 {
+    font-family: "Bebas Neue", cursive;
+    font-size  : 150px;
+
+}
+
+main {
+    /* background: linear-gradient(90deg, rgba(69, 36, 46, 1) 49%, rgba(0,0,0,0) 51%), linear-gradient(90deg, #818181 2%, rgba(0,0,0,0) 98%); */
+    background: linear-gradient(120deg, #45242e 50%, rgba(0, 0, 0, 0) 50%), linear-gradient(123deg, #818181 50%, #cba296 50%);
+    /* background-size: cover; */
+}
+
+

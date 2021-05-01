@@ -1,0 +1,50 @@
+@import url(banner.css);
+@import url(galeria.css);
+@import url(recepcion.css);
+@import url(nosotros.css);
+/* colores:
+rosa intermedio: #cba296
+burdeo: #45242e
+rosa clarito: #fff6eb
+gris: #818181
+rosa: #b04544 */
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+.titulos {
+    font-family: 'Bebas Neue', cursive;
+    color      : #fff6eb;
+    font-size  : 50px;
+}
+
+.texto {
+    font-family: 'Exo 2', sans-serif;
+    color      : #fff6eb;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+#contenedor-cabecera {
+    background-color: #45242e;
+    width           : auto;
+    height          : 100px;
+    padding         : 15px;
+}
+
+.separador {
+    background-color: #818181;
+    height          : 8px;
+}
+
+.espaciador {
+    height: 100px;
+}
+
+footer {
+    height: 50px;
+}
