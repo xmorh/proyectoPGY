@@ -23,7 +23,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand titulos" href="index.html">
-                <img class="img-fluid navbar-brand" src="img/iconoRadar.png" alt="LogoRadarModa" style="filter: invert(100%); height: 40px;">
+                <img class="img-fluid navbar-brand" src="img/iconoRadar.png" alt="LogoRadarModa"
+                    style="filter: invert(100%); height: 40px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -54,12 +55,17 @@
                         <a class="nav-link active" href="contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
                     </li>
                 </ul>
+                <div>
+                    <a href="usuario.html" class="bi bi-person-circle"
+                        style="color: white;font-size: 2em; margin-right: 0.5em;"></a>
+                </div>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                     <button class="btn btn-outline-light" type="submit">Buscar</button>
                 </form>
                 <!-- API mindicador -->
-                <div class="navbar-text text-muted" id="apisValores" style="color:white; margin-left: 15px; font-size: 12px; padding: 0 !important;">
+                <div class="navbar-text text-muted" id="apisValores"
+                    style="color:white; margin-left: 15px; font-size: 12px; padding: 0 !important;">
                 </div>
                 </ul>
             </div>
@@ -70,9 +76,10 @@
     <main>
         <div class="separador"></div>
         <section id="banner">
-           <div class="col-md-10 align-self-center">
+            <div class="col-md-10 align-self-center">
                 <blockquote class="blockquote">
-                    <p class="text-muted fw-lighter">Accesorios con conciencia ecológica que necesitan ser recuperados</p>
+                    <p class="text-muted fw-lighter">Accesorios con conciencia ecológica que necesitan ser recuperados
+                    </p>
                 </blockquote>
             </div>
         </section>
@@ -95,28 +102,33 @@
                 <div class="col-md-6">
                     <p class="fs-4 fw-bold">Envíanos un correo:</p>
                     <div class="row">
-                        <div class="col-md-6" style="margin-top: 15px;">
-                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
-                        </div>
-                        <div class="col-md-6" style="margin-top: 15px;">
-                            <input type="email" class="form-control" placeholder="tu@correo.com">
-                        </div>
-                        <div class="espaciador"></div>
-                        <!-- <div class="row"> -->
-                        <div class="col-md-12">
-                            <label class="fw-bold" for="txtMensaje">¡Escríbenos!</label>
-                            <textarea type="text" class="form-control" placeholder="Escribe aquí tu mensaje"
-                                id="txtMensaje" rows="5"></textarea>
-                            <div class="row justify-content-center">
-                                <div class="col-md-2" style="margin-top: 5px;">
-                                    <button class="btn btn-secondary" type="submit" id="btnEnviar">Enviar</button>
+                        <form id="formulario_contacto">
+                            <div class="col-md-6" style="margin-top: 15px;">
+                                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre"
+                                    name="nombre" id="nombre">
+                            </div>
+                            <div class="col-md-6" style="margin-top: 15px;">
+                                <input type="email" class="form-control" placeholder="tu@correo.com" name="email"
+                                    id="email">
+                            </div>
+                            <div class="espaciador"></div>
+                            <!-- <div class="row"> -->
+                            <div class="col-md-12">
+                                <label class="fw-bold" for="txtMensaje">¡Escríbenos!</label>
+                                <textarea type="text" class="form-control" placeholder="Escribe aquí tu mensaje"
+                                    id="txtMensaje" rows="5"></textarea>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-2" style="margin-top: 5px;">
+                                        <button class="btn btn-secondary" type="button" id="btnEnviar">Enviar</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
+
                     <div class="row justify-content-center" style="margin-top: 40px;">
                         <div class="col-md-3">
-                            <a href="http://www.facebook.com/radarmoda" class="text-dark">
+                            <a href="http://www.facebook.com/radarmoda" class="text-dark" target="_blanck">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-facebook" viewBox="0 0 16 16">
                                     <path
@@ -125,7 +137,7 @@
                                 radarmoda</a>
                         </div>
                         <div class="col-md-3">
-                            <a href="https://www.instagram.com/radar.moda" class="text-dark">
+                            <a href="https://www.instagram.com/radar.moda" class="text-dark" target="_blanck">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-instagram" viewBox="0 0 16 16">
                                     <path
@@ -169,6 +181,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="js/traducciones_Jquery.js"></script>
+    <script src="js/contacto.js"></script>
 
 </body>
 

@@ -2,6 +2,7 @@
 @import url(galeria.css);
 @import url(recepcion.css);
 @import url(nosotros.css);
+@import url(catalogo.css);
 /* colores:
 rosa intermedio: #cba296
 burdeo: #45242e
@@ -47,4 +48,40 @@ a {
 
 footer {
     height: 50px;
+}
+
+.contenedor h1 {
+
+    font-size      : small;
+    justify-content: space-between;
+
+}
+
+.contenedor div i {
+    margin-right: 120px;
+}
+
+.user-img {
+    margin-top   : -50px;
+    margin-bottom: 30px;
+}
+
+.user-img img {
+    width : 100px;
+    height: 100px;
+}
+
+.modal-content {
+    background-color: #45242e;
+    opacity         : .75;
+    padding         : 0 20px;
+}
+
+.contraseña {
+    margin-right: 120px;
+}
+
+.usuario {
+    font-size  : 30px;
+    margin-left: 10px;
 }
