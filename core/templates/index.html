@@ -1,0 +1,33 @@
+{% extends 'baseIndex.html' %}
+{% load static %}
+{% block contenido %}
+
+<section id="recepcion">
+    <div class="container-fluid">
+        <div class="espaciador"></div>
+        <div class="row align-items-center">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 align-middle" id="fondo-izq">
+                <img src="{% static 'img/LogoRadarRedondoColor2.png' %}" alt="Logo RADAR" class="img-fluid">
+            </div>
+
+            <div class="col-md-5" id="fondo-der">
+                <h1>RADAR</h1>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="¿Qué quieres encontrar?"
+                        aria-label="Search">
+                    <button class="btn btn-secondary btn-lg" type="submit" id="btnBuscar"
+                        style="margin-top: 10px;">Buscar</button>
+                </form>
+                <p class="tex-info fs-5">Aquí puedes ingresar el producto que estás buscando. <br> ¡Lo podrías
+                    encontrar
+                    más rápido! <br></p>
+                <p class="fs-7"> También puedes ir directamente al <a href="{% url 'catalogo' %}" >Catálogo</a></p>
+            </div>
+            <div class="col-md-1"></div>
+
+        </div>
+        <div class="espaciador"></div>
+    </div>
+</section>
+{% endblock contenido %}

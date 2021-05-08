@@ -1,0 +1,28 @@
+#banner {
+    background-color: rgba(0, 0, 0, 0.6);
+    width           : auto;
+    height          : 80px;
+    display         : flex;
+    text-align      : center !important;
+    justify-content : center;
+}
+
+.banner>#texto-banner {
+    display    : flex;
+    text-align : center;
+    align-items: center;
+    flex-wrap  : wrap;
+}
+
+.contenedor {
+    display    : flex;
+    color      : whitesmoke !important;
+    align-items: center !important;
+    text-align : center !important;
+}
+
+/* #texto-banner {
+    display: flex;
+    align-items: center;
+    text-align: center;
+} */

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+<div class="espaciador"></div>
+
+<section class="container-fluid align-items-center">
+    <div id="registro" class="modal-dialog text-center">
+        <div class="modal-content">
+            <div class="col-12 user-img">
+                <img src="{% static 'img/clientes/user.svg' %}" alt="">
+            </div>
+            <form class="col-12" id="formulario_usuario">
+                <div class="form-group" id="">
+                    <input type="text" id="usuario" name="usuario" class="form-control" placeholder="Usuario">
+                </div>
+                <br>
+                <div class="form-group" id="">
+                    <input type="password" id="contraseña" name="contraseña" class="form-control"
+                        placeholder="Contraseña">
+                </div>
+                <br>
+                <a class="contraseña" href="#">¿Olvidaste la contraseña? </a>
+                <button type="button" id="ingresar" class="btn btn-primary border border-basic"
+                    style="background: #8F6874;">Ingresar
+                </button>
+            </form>
+            <div>
+
+                <div id="registro" class="col-12 forgot">
+                    <br>
+                    <div>¿Aun no tienes cuenta? <a href="{% url 'registro' %}">Registrarme</a></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<div class="espaciador"></div>
+{% endblock contenido %}

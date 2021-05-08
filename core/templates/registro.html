@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+<div class="espaciador"></div>
+
+
+<section class="container-fluid align-items-center">
+    <div id="registro" class="modal-dialog text-center">
+        <div class="modal-content">
+            <div class="col-12 user-img">
+                <img src="{% static 'img/clientes/user.svg' %}" alt="">
+            </div>
+            <form class="col-12" id="formulario_registro">
+                <div class="form-group" id="">
+                    <input type="text" id="nomUsuario" name="nomUsuario" class="form-control"
+                        placeholder="Nombre de Usuario">
+                </div>
+                <br>
+                <div class="form-group" id="">
+                    <input type="text" id="email" name="email" class="form-control" placeholder="Correo Electronico">
+                </div>
+                <br>
+                <div class="form-group" id="">
+                    <input type="password" id="contraseña" name="contraseña" class="form-control"
+                        placeholder="Contraseña">
+                </div>
+                <br>
+                <div class="form-group" id="">
+                    <input type="password" id="contraseñaRepetida" name="contraseñaRepetida" class="form-control"
+                        placeholder="Repetir Contraseña">
+                </div>
+                <br>
+                <a class="contraseña" href="#">¿Olvidaste la contraseña? </a>
+
+                <button type="button" id="registrarme" style="background: #8F6874; margin-bottom: 2em;"
+                    class="btn btn-primary border border-basic">Registrarme</button>
+
+
+            </form>
+
+        </div>
+    </div>
+
+</section>
+
+<div class="espaciador"></div>
+{% endblock contenido %}
+
+{% block js %}
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js">
+</script>
+<script src="{% static 'js/traducciones_Jquery.js' %}"></script>
+<script src="{% static 'js/registro.js' %}"></script>
+
+{% endblock js %}

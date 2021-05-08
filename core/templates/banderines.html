@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{{% block contenido %}
+
+        <div class="espaciador"></div>
+
+        <section class="container-fluid align-items-center">
+
+            <div class="row justify-content-center">
+                <p class="text-white fw-bold fs-1 text-center">¡Banderines!</p>
+                <br>
+                <div class="col-md-5">
+                    <img src="{% static 'img/productos/banderines1.jpg' %}" alt="muchos banderines" class="img-fluid rounded"
+                        style="margin-bottom: 20px">
+                </div>
+                <div class="text-white" style="background-color: rgba(0, 0, 0, 0.4); padding: 15px">
+                    <p class="text-white fw-bold">Banderines para adornar cualquier espacio de tu hogar</p>
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem vitae nobis
+                        possimus, sequi unde assumenda, explicabo molestiae magnam provident iste laudantium, quia cum
+                        quo
+                        obcaecati rerum tenetur beatae debitis <perferendis class=":w"></perferendis>
+                    </p>
+                </div>
+                <div class="row justify-content-center" style="margin: 15px">
+                    <div class="col-md-3">
+                        <a data-fslightbox="banderines" href="{% static 'img/productos/banderin1.JPG' %}">
+                        <img src="{% static 'img/productos/banderin1.JPG' %}" alt="banderines oscures" class="img-fluid rounded"
+                            id="banderin1"></a>
+                        <label for="banderin1" class="fw-bold">Banderines oscuros para los darks</label>
+                    </div>
+                    <div class="col-md-3">
+                        <a data-fslightbox="banderines" href="{% static 'img/productos/banderin2.JPG' %}">
+                        <img src="{% static 'img/productos/banderin2.JPG' %}" alt="banderines con cerditos" class="img-fluid rounded"
+                            id="banderin2"></a>
+                        <label for="banderin2" class="fw-bold">Banderines con cerditos para los cochinos</label>
+                    </div>
+                    <div class="col-md-3">
+                        <a data-fslightbox="banderines" href="{% static 'img/productos/banderin3.JPG' %}">
+                        <img src="{% static 'img/productos/banderin3.JPG' %}" alt="banderines verdes suave" class="img-fluid rounded"
+                            id="banderin3"></a>
+                        <label for="" class="fw-bold">Banderines para los verdes</label>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="espaciador"></div>
+
+{% endblock contenido %}}

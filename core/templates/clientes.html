@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+        <div class="espaciador"></div>
+
+        <section class="container-fluid align-items-center">
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-5">
+                    <img src="{% static 'img/clientes/cliente1.jpg' %}" alt="cliente1" class="img-fluid rounded" id="imgCliente1">
+                    <div style="background-color: rgba(0, 0, 0, 0.4);">
+                        <label for="imgCliente1" style="color: white;">Elba Lazo</label>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui corporis
+                            quas,
+                            reiciendis, quasi asperiores neque voluptate sint vel perspiciatis dolorum ipsum
+                            exercitationem
+                            animi reprehenderit facere. Dignissimos atque dolor ab vitae?</p>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <img src="{% static 'img/clientes/cliente2.jpg' %}" alt="cliente2" class="img-fluid rounded" id="imgCliente2">
+                    <div style="background-color: rgba(0, 0, 0, 0.4);">
+                        <label for="imgCliente2" style="color: white;">Blanca Nieves</label>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui corporis
+                            quas,
+                            reiciendis, quasi asperiores neque voluptate sint vel perspiciatis dolorum ipsum
+                            exercitationem
+                            animi reprehenderit facere. Dignissimos atque dolor ab vitae?</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <div class="espaciador"></div>
+{% endblock contenido %}

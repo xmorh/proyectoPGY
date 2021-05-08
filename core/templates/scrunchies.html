@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+<div class="espaciador"></div>
+
+<section class="container-fluid align-items-center">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <div id="carouselCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'img/productos/Scrunchie1.png' %}" class="d-block w-100" alt="scrunchie1">
+                        <div class="carousel-caption d-none d-md-block"
+                            style="background-color: rgba(244, 244, 244, 0.5);">
+                            <h5>Scrunchie Blanco XL con lazo</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime placeat quaerat
+                                at ipsum itaque voluptate vero omnis, dolorem, error, consequatur dicta tenetur.
+                                Accusamus alias animi eveniet amet quaerat maiores corporis?</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/productos/scrunchie2.jpg' %}" class="d-block w-100" alt="scrunchie2">
+                        <div class="carousel-caption d-none d-md-block"
+                            style="background-color: rgba(244, 244, 244, 0.5);">
+                            <h5>Scrunchie Rosa XXL</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ab
+                                maiores exercitationem consectetur repellendus velit consequuntur quia eligendi
+                                nemo laudantium ducimus delectus possimus distinctio natus rerum, assumenda
+                                tenetur praesentium eaque.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/productos/scrunchie3.jpg' %}" class="d-block w-100" alt="scrunchie3">
+                        <div class="carousel-caption d-none d-md-block"
+                            style="background-color: rgba(244, 244, 244, 0.5);">
+                            <h5>Variedad de Scrunchies</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis unde dolor
+                                quam ipsam alias ut deleniti repellat eum culpa dolorem ipsum optio iste numquam
+                                error, impedit soluta ab repudiandae odit!</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="espaciador"></div>
+{% endblock contenido %}
