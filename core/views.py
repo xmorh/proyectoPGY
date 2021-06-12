@@ -1,4 +1,6 @@
+from core.models import Producto
 from django.shortcuts import render
+from .models import Producto
 
 # Create your views here.
 
@@ -9,7 +11,11 @@ def nosotros(request):
     return render(request, 'nosotros.html')
 
 def banderines(request):
-    return render(request, 'banderines.html')
+    productos = Producto.objects.all()
+    data = {
+        'productos': productos
+    }
+    return render(request, 'banderines.html', data)
 
 def scrunchies(request):
     return render(request, 'scrunchies.html')
