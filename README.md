@@ -2,4 +2,4 @@
 
 Página web prototipo para emprendimiento de accesorios.
 
-Se usó bootstrap 5.
+Implementado en Django 3.2.2.
