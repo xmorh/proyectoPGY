@@ -1,5 +1,6 @@
+from core.forms import ContactoForm
 from django.contrib import admin
-from .models import Categoria, Material, Producto, Cliente
+from .models import Categoria, Material, Producto, Cliente, Contacto
 # Register your models here.
 
 class ProductoAdmin(admin.ModelAdmin):
@@ -12,3 +13,4 @@ admin.site.register(Material)
 admin.site.register(Producto)
 admin.site.register(Cliente)
 admin.site.register(Categoria)
+admin.site.register(Contacto)

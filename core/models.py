@@ -35,3 +35,18 @@ class Cliente(models.Model):
 
     def __str__(self):
         return self.nombre
+       
+opciones_mensaje = [
+    [0, "consulta"],
+    [1, "reclamo"],
+    [2, "sugerencia"]
+]
+
+class Contacto(models.Model):
+    nombre = models.CharField(max_length=50)
+    correo = models.EmailField()
+    tipo_mensaje = models.IntegerField(choices=opciones_mensaje)
+    mensaje = models.TextField()
+
+    def __str__(self):
+        return self.nombre
