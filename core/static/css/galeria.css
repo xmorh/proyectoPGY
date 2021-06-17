@@ -20,12 +20,64 @@
 
 }
 
+.titulo{
+    font-family: 'Viaoda Libre', cursive;
+    color      : #fff6eb;
+    font-size  : 50px;
+    text-align: center;
+    justify-content: center;
+}
+
 main {
     /* background: linear-gradient(90deg, rgba(69, 36, 46, 1) 49%, rgba(0,0,0,0) 51%), linear-gradient(90deg, #818181 2%, rgba(0,0,0,0) 98%); */
     background: linear-gradient(120deg, #45242e 50%, rgba(0, 0, 0, 0) 50%), linear-gradient(123deg, #818181 50%, #cba296 50%);
     /* background-size: cover; */
 }
 
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
 
+.galeria img{
+    width:  100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    
+    border-radius: 15px;
+}
 
+@media(max-width: 1024px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 15px;
+        margin: 30px;
+        border-radius: 15px;
+    }
+}
 
+@media(max-width: 480px){
+    .galeria{
+        grid-template-columns: 1fr;
+        margin: 15px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+    }
+
+}
+
+.galeria .data-caption{
+    bottom: 30px;
+    right: 0;
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    background: #000;
+    box-shadow: 5px 5px #fff;
+    font-size: 20px;
+    color: #fff;
+    line-height: 8px;
+}
