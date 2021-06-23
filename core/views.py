@@ -19,8 +19,16 @@ def banderines(request):
     }
     return render(request, 'banderines.html', data)
 
+
+
 def scrunchies(request):
-    return render(request, 'scrunchies.html')
+    productos = Producto.object.all()
+    data = {
+        'productos' : productos
+    }
+    return render(request, 'scrunchies.html', data)
+
+
 
 def catalogo(request):
     return render(request, 'catalogo.html')

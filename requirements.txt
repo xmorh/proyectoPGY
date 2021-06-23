@@ -2,3 +2,4 @@ django == 3.2.2
 pillow
 django-admin-interface == 0.16.3
 django-crispy-forms
+crispy_bootstrap5
