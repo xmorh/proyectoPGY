@@ -21,92 +21,24 @@
 
 <div class="espaciador"></div>
 <h1 class="titulo"> SCRUNCHIES </h1>
-<hr>
 
-<div class="galeria">
-    
-    
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie1.png' %}" data-caption="Scrunchie palido con cinta">
-        
-        <img src="{% static 'img/productos/scrunchie1.png' %}" alt="" >
-        
-    </a>
 
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie2.jpg' %}" data-caption="scrunchie XL">
-        <img src="{% static 'img/productos/scrunchie2.jpg' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie3.jpg' %}" data-caption="Kit scrunchies ">
-        <img src="{% static 'img/productos/scrunchie3.jpg' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie4.JPG' %}" data-caption="Duo XL scrunchie">
-        <img src="{% static 'img/productos/scrunchie4.JPG' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie5.JPG' %}" data-caption="Tripack scrunchies XL">
-        <img src="{% static 'img/productos/scrunchie5.JPG' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie6.JPG' %}" data-caption="Scrunchies 5 colores">
-        <img src="{% static 'img/productos/scrunchie6.JPG' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie7.JPG' %}" data-caption="Scrunchies aflorados">
-        <img src="{% static 'img/productos/scrunchie7.JPG' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie8.jpg' %}" data-caption="Scrunchies rojos">
-        <img src="{% static 'img/productos/scrunchie8.jpg' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie9.jpg' %}" data-caption="Scrunchies blancos">
-        <img src="{% static 'img/productos/scrunchie9.jpg' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie10.jpg' %}" data-caption="Scrunchie beige">
-        <img src="{% static 'img/productos/scrunchie10.jpg' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie11.jpg' %}" data-caption="Scrunchies 5 colores">
-        <img src="{% static 'img/productos/scrunchie11.jpg' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie12.jpg' %}" data-caption="Scrunchie rosados">
-        <img src="{% static 'img/productos/scrunchie12.jpg' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie13.jpg' %}" data-caption="Scrunchies cuadrille blanco y negro">
-        <img src="{% static 'img/productos/scrunchie13.jpg' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie14.jpg' %}" data-caption="Scrunchies con diseños">
-        <img src="{% static 'img/productos/scrunchie14.jpg' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie21.jpg' %}" data-caption="Kit Scrunchies con cinta">
-        <img src="{% static 'img/productos/scrunchie21.jpg' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie22.jpeg' %}" data-caption="Scrunchies morados">
-        <img src="{% static 'img/productos/scrunchie22.jpeg' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie17.jpg' %}" data-caption="Scrunchies palidos ">
-        <img src="{% static 'img/productos/scrunchie17.jpg' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie18.jpg' %}" data-caption="Scrunchie celeste">
-        <img src="{% static 'img/productos/scrunchie18.jpg' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie19.jpg' %}" data-caption="Scrunchie morados">
-        <img src="{% static 'img/productos/scrunchie19.jpg' %}">
-    </a>
-
-    <a data-fancybox="gallery" href="{% static 'img/productos/scrunchie20.jpg' %}" data-caption="Scrunchies textil">
-        <img src="{% static 'img/productos/scrunchie20.jpg' %}">
-    </a>
-    
+<div class="row justify-content-center" style="margin: 15px">
+    <hr>
+    <hr>
+    {% for s in productos %}
+    <div class="col-md-8">
+        {% if s.categoria.id == 2 %}
+            {% if s.imagen %}
+            <a data-fslightbox="scrunchie" href="{{ s.imagen.url }}">
+            <img src="{{ s.imagen.url }}" alt="Scrunchies" class="img-fluid rounded"></a>
+            {% endif %}
+            <h3 class="fw-bold ">{{ s.nombre | capfirst }}</h3>
+            <h4>Largo: {{s.dimensiones}}</h4>
+            <h4>precio: {{s.precio}}</h4>
+        {% endif %}
+        </div>
+    {% endfor %}
 </div>
+
 {% endblock%}
